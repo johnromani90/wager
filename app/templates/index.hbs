@@ -8,7 +8,7 @@
 </div>
 {{#each model as |user|}}
   <article class="to-be-determined">
-    <h2>{{user.name}}</h2>
+    <h2>{{#link-to 'users.show'}}{{user.name}}{{/link-to}}</h2>
     <div>
       <span>Email:</span> {{user.email}}
     </div>
